@@ -21,11 +21,13 @@ function generate(length, characters){
 }
 
 function generatePassword() {
+
   var userLength = window.prompt("what is the minimum amunt of charaters you would like? (8-126)")
   var userLowerCase = window.confirm("Would you like lowercase letters?");
   var userUpperCase = window.confirm("Would you like uppercase letters?");
   var userNumbers = window.confirm("Would you like numerical characters?");
   var userSpecialCharacters = window.confirm("Would you like special characters?");
+  
 if (userLowerCase & !userUpperCase & !userNumbers & !userSpecialCharacters){
 
  var password= generate(userLength, "abcdefghijklmnopqrstuvwxyz");
